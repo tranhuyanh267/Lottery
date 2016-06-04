@@ -25,7 +25,8 @@ public class RssFeedService implements IRssFeedService{
 			BufferedReader bufferReader = new BufferedReader(new InputStreamReader(url.openStream()));
 			String line = "";
 			while ((line = bufferReader.readLine()) != null) {
-				pureRssFeed += line;
+				//System.out.println(line);
+				pureRssFeed +=  line;
 			}
 			bufferReader.close();
 		} catch (Exception e) {
@@ -41,8 +42,7 @@ public class RssFeedService implements IRssFeedService{
 	@Override
 	public List<LotteryResult> getLotteryResults() {
 		lotteryResults = new ArrayList<>();
-		LotteryResult lotteryResult = new LotteryResult();
-		lotteryResults.add(lotteryResult);
+		lotteryResults.add(new LotteryResult());
 		return lotteryResults;
 	}
 

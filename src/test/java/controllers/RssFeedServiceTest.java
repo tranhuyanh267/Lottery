@@ -34,4 +34,5 @@ public class RssFeedServiceTest {
 		List<LotteryResult> lotteryResults = rssFeedService.getLotteryResults();
 		Assert.assertTrue(lotteryResults.size() > 0);
 	}
+	
 }

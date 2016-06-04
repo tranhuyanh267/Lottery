@@ -1,36 +1,24 @@
 package models;
 
 import java.util.Date;
+import java.util.Map;
 
 public class LotteryResult {
 	
 	private String title;
-	private String description;
 	private String link;
 	private Date pubDate;
+	private Map<String, String>  result;
 	
 	public LotteryResult() {
 		
 	}
 	
-	public LotteryResult(String title, String description, String link, Date pubDate) {
-		super();
-		this.title = title;
-		this.description = description;
-		this.link = link;
-		this.pubDate = pubDate;
-	}
 	public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
 	}
 	public String getLink() {
 		return link;
@@ -43,6 +31,12 @@ public class LotteryResult {
 	}
 	public void setPubDate(Date pubDate) {
 		this.pubDate = pubDate;
+	}
+	public Map<String, String> getResult() {
+		return result;
+	}
+	public void setResult(Map<String, String> result) {
+		this.result = result;
 	}
 	
 	
